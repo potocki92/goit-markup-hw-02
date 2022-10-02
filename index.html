@@ -10,7 +10,7 @@
     <header>
       <!-- background header -->
       <img
-        src="images/background.jpg"
+        src="./images/background.jpg"
         class="bg-image"
         alt="gray background of header"
         width="1600"
@@ -19,7 +19,7 @@
       <!-- end background header -->
 
       <!-- logo -->
-      <a href="#" id="logo">WebStudio</a>
+      <a href="#" class="logo"><span class="logo-web">Web</span>Studio</a>
 
       <!-- navigation -->
       <nav>
@@ -48,20 +48,13 @@
       </ul>
 
       <!-- button -->
-      <button type="button">Zamów usługę</button>
       <h1>Efektywne rozwiązania dla waszego biznesu</h1>
+      <button type="button">Zamów usługę</button>
     </header>
     <!-- end header -->
 
     <!-- start main -->
     <main>
-      <!-- first container (fingers) -->
-      <!--<div class="pointer-container">
-        <img src="images/finger.jpg" alt="finger" id="finger-1" />
-        <img src="images/finger.jpg" alt="finger" id="finger-2" />
-        <img src="images/finger.jpg" alt="finger" id="finger-3" />
-      </div>-->
-
       <!-- first container (featuer): simple description about the webstudio -->
       <div class="feature-container">
         <div class="feature" id="feature-1">
@@ -99,7 +92,7 @@
         <h2>Czym się zajmujemy</h2>
         <div class="image-box">
           <img
-            src="images/features/image_tablet.jpg"
+            src="./images/main_page/features/image_tablet.jpg"
             alt="tablet"
             width="370"
             height="294"
@@ -107,7 +100,7 @@
         </div>
         <div class="image-box">
           <img
-            src="images/features/image_phone.jpg"
+            src="./images/main_page/features/image_phone.jpg"
             alt="phone"
             width="370"
             height="294"
@@ -115,7 +108,7 @@
         </div>
         <div class="image-box">
           <img
-            src="images/features/image_computer.jpg"
+            src="./images/main_page/features/image_computer.jpg"
             alt="computer"
             width="370"
             height="294"
@@ -129,43 +122,47 @@
         <div class="team">
           <div class="team-card" id="card-1">
             <img
-              src="images/team/image_product_designer.jpg"
+              class="team-image"
+              src="./images/main_page/team/image_product_designer.jpg"
               alt="image of Product Designer"
               width="270"
               height="260"
             />
-            <h6>John Doe<br /></h6>
-            <h6>Product Designer</h6>
+            <h6 class="team-name">John Doe</h6>
+            <h6 class="team-profession">Product Designer</h6>
           </div>
           <div class="team-card" id="card-2">
             <img
-              src="images/team/image_frontend_developer.jpg"
+              class="team-image"
+              src="./images/main_page/team/image_frontend_developer.jpg"
               alt="image of Frontend Developer"
               width="270"
               height="260"
             />
-            <h6>John Doe<br /></h6>
-            <h6>Frontend Developer</h6>
+            <h6 class="team-name">John Doe</h6>
+            <h6 class="team-profession">Frontend Developer</h6>
           </div>
           <div class="team-card" id="card-3">
             <img
-              src="images/team/image_marketing.jpg"
+              class="team-image"
+              src="./images/main_page/team/image_marketing.jpg"
               alt="image of Marketing"
               width="270"
               height="260"
             />
-            <h6>John Doe<br /></h6>
-            <h6>Marketing</h6>
+            <h6 class="team-name">John Doe</h6>
+            <h6 class="team-profession">Marketing</h6>
           </div>
           <div class="team-card" id="card-4">
             <img
-              src="images/team/image_ui_designer.jpg"
+              class="team-image"
+              src="./images/main_page/team/image_ui_designer.jpg"
               alt="image of UI Designer"
               width="270"
               height="260"
             />
-            <h6>John Doe<br /></h6>
-            <h6>UI Designer</h6>
+            <h6 class="team-name">John Doe</h6>
+            <h6 class="team-profession">UI Designer</h6>
           </div>
         </div>
       </div>
@@ -175,19 +172,21 @@
     <!-- start footer -->
     <footer>
       <img
-        src="images/background.jpg"
+        src="./images/background.jpg"
         class="bg-image"
         alt="gray background of footer"
         width="1600"
         height="252"
       />
-      <a href="#" id="logo">WebStudio</span>
+      <a href="#" class="logo"><span class="logo-web">Web</span>Studio</a>
 
       <!-- address to coresponde -->
       <address>
-        m. Warszawa, Aleje Jerozolimskie 21<br />
-        <a href="mailto:info@example.com">info@example.com</a><br />
-        <a href="tel:+48111111111">+48 111 111 111</a><br />
+        <ul>
+          <li>m. Warszawa, Aleje Jerozolimskie 21</li>
+          <li><a href="mailto:info@example.com">info@example.com</a></li>
+          <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+        </ul>
       </address>
     </footer>
     <!-- end footer -->
