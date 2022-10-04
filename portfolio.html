@@ -14,204 +14,214 @@
 
   <body>
     <!-- start header -->
-    <header class="header-container">
-      <!-- logo -->
-      <a href="./index.html" class="logo"
-        ><span class="logo-web">Web</span>Studio</a
-      >
-
-      <!-- navigation -->
-      <nav class="nav-container">
-        <ul class="nav-list">
-          <li class="nav-link">
-            <a class="nav-text" href="#" id="agency">Agencja</a>
+    <header class="header__container">
+      <!-- start logo -->
+      <div class="logo__container">
+        <a href="./index.html" class="logo__link link"
+          ><span class="logo__web">Web</span>Studio</a
+        >
+      </div>
+      <!-- end logo -->
+      <!-- start navigation -->
+      <nav class="nav__container">
+        <ul class="nav__list">
+          <li class="nav__item item">
+            <a class="nav__link link" href="#" id="agency">Agencja</a>
           </li>
-          <li class="nav-link">
-            <a class="nav-text" href="./portfolio.html" id="portfolio">Portfolio</a>
+          <li class="nav__item item">
+            <a class="nav__link link" href="./portfolio.html" id="portfolio"
+              >Portfolio</a
+            >
           </li>
-          <li class="nav-link">
-            <a class="nav-text" href="#" id="contact">Kontakt</a>
+          <li class="nav__item item">
+            <a class="nav__link link" href="#" id="contact">Kontakt</a>
           </li>
         </ul>
       </nav>
       <!-- end navigation -->
-
-      <!-- telephone and email  -->
-      <ul class="contact-list">
-        <li class="contact-link">
-          <a class="contact-text" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="contact-link">
-          <a class="contact-text" href="tel:+48111111111">+48 111 111 111</a>
-        </li>
-      </ul>
+      <!-- start contact container: telephone and email  -->
+      <div class="contact__container">
+        <ul class="contact__list">
+          <li class="contact__item item">
+            <a class="contact__link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contact__item item">
+            <a class="contact__link link" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <!-- end header -->
-
     <!-- start main -->
-    <main class="main-container">
+    <main class="main__container">
       <!-- start portfolio container -->
-      <div class="portfolio-container">
-        <!-- first container (filters): container with buttons -->
-        <div class="filters-container">
-          <ul class="filters-list">
-            <li class="filters-link">
-              <button class="filters-button" type="button">Wszystkie</button>
+      <div class="portfolio__container">
+        <!-- start filters container: container with buttons -->
+        <div class="filters__container">
+          <ul class="filters__list">
+            <li class="filters__item item">
+              <button class="filters__button" type="button">Wszystkie</button>
             </li>
-            <li class="filters-link">
-              <button class="filters-button" type="button">Strony</button>
+            <li class="filters__item item">
+              <button class="filters__button" type="button">Strony</button>
             </li>
-            <li class="filters-link">
-              <button class="filters-button" type="button">Aplikacje</button>
+            <li class="filters__item item">
+              <button class="filters__button" type="button">Aplikacje</button>
             </li>
-            <li class="filters-link">
-              <button class="filters-button" type="button">Dizajn</button>
+            <li class="filters__item item">
+              <button class="filters__button" type="button">Dizajn</button>
             </li>
-            <li class="filters-link">
-              <button class="filters-button" type="button">Marketing</button>
+            <li class="filters__item item">
+              <button class="filters__button" type="button">Marketing</button>
             </li>
           </ul>
         </div>
-
-        <!-- second portfolio with projects (image, header and paragraph)-->
-        <div class="projects-container">
-          <ul class="projects-list">
+        <!-- end filters container -->
+        <!-- start projects container: image, header and paragraph -->
+        <div class="projects__container">
+          <ul class="projects__list">
             <!-- Technocrack -->
-            <li class="projects-link">
+            <li class="projects__item item">
               <img
-                class="projects-image"
+                class="projects__image"
                 src="./images/portfolio/technocrack.jpg"
                 alt="Image of Technocrack from WebPage Category"
                 width="370"
                 height="294"
               />
-              <h6 class="projects-name">Technocrack</h6>
-              <p class="projects-category">Strona internetowa</p>
+              <h6 class="projects__name">Technocrack</h6>
+              <p class="projects__category">Strona internetowa</p>
             </li>
             <!-- New Orlean vs Golden Star -->
-            <li class="projects-link">
+            <li class="projects__item item">
               <img
-                class="projects-image"
+                class="projects__image"
                 src="./images/portfolio/new_orlean_vs_golden_star.jpg"
                 alt="Image of New Orlean vs Golden Star from Design Category"
                 width="370"
                 height="294"
               />
-              <h6 class="projects-name">Grafika New Orlean vs Golden Star</h6>
-              <p class="projects-category">Dizajn</p>
+              <h6 class="projects__name">Grafika New Orlean vs Golden Star</h6>
+              <p class="projects__category">Dizajn</p>
             </li>
             <!-- Seafood Restaurant -->
-            <li class="projects-link">
+            <li class="projects__item item">
               <img
-                class="projects-image"
+                class="projects__image"
                 src="./images/portfolio/seafood-restaurant.jpg"
                 alt="Image of Seafood Restaurant from Application Category"
                 width="370"
                 height="294"
               />
-              <h6 class="projects-name">Restauracja Seafood</h6>
-              <p class="projects-category">Aplikacja</p>
+              <h6 class="projects__name">Restauracja Seafood</h6>
+              <p class="projects__category">Aplikacja</p>
             </li>
             <!-- Projekt Prime -->
-            <li class="projects-link">
+            <li class="projects__item item">
               <img
-                class="projects-image"
+                class="projects__image"
                 src="./images/portfolio/project-prime.jpg"
                 alt="Image of Project Prime from Marketing Category"
                 width="370"
                 height="294"
               />
-              <h6 class="projects-name">Projekt Prime</h6>
-              <p class="projects-category">Marketing</p>
+              <h6 class="projects__name">Projekt Prime</h6>
+              <p class="projects__category">Marketing</p>
             </li>
             <!-- Project Boxes -->
-            <li class="projects-link">
+            <li class="projects__item item">
               <img
-                class="projects-image"
+                class="projects__image"
                 src="./images/portfolio/project-boxes.jpg"
                 alt="Image of Project Boxes from Application Category"
                 width="370"
                 height="294"
               />
-              <h6 class="projects-name">Projekt Boxes</h6>
-              <p class="projects-category">Aplikacja</p>
+              <h6 class="projects__name">Projekt Boxes</h6>
+              <p class="projects__category">Aplikacja</p>
             </li>
             <!-- Inspiration has no Borders -->
-            <li class="projects-link">
+            <li class="projects__item item">
               <img
-                class="projects-image"
+                class="projects__image"
                 src="./images/portfolio/borders.jpg"
                 alt="Image of Inspiration has no Borders from WebPage Category"
                 width="370"
                 height="294"
               />
-              <h6 class="projects-name">Inspiration has no Borders</h6>
-              <p class="projects-category">Strona internetowa</p>
+              <h6 class="projects__name">Inspiration has no Borders</h6>
+              <p class="projects__category">Strona internetowa</p>
             </li>
             <!-- limited edition magazine -->
-            <li class="projects-link">
+            <li class="projects__item item">
               <img
-                class="projects-image"
+                class="projects__image"
                 src="./images/portfolio/magazine.jpg"
                 alt="Images of Limited Edition Magazine from Design Category"
                 width="370"
                 height="294"
               />
-              <h6 class="projects-name">Magazyn Limited Edition</h6>
-              <p class="projects-category">Dizajn</p>
+              <h6 class="projects__name">Magazyn Limited Edition</h6>
+              <p class="projects__category">Dizajn</p>
             </li>
             <!-- Projekt LAB -->
-            <li class="projects-link">
+            <li class="projects__item item">
               <img
-                class="projects-image"
+                class="projects__image"
                 src="./images/portfolio/lab.jpg"
                 alt="Image of Project LAB from Marketing Category"
                 width="370"
                 height="294"
               />
-              <h6 class="projects-name">Projekt LAB</h6>
-              <p class="projects-category">Marketing</p>
+              <h6 class="projects__name">Projekt LAB</h6>
+              <p class="projects__category">Marketing</p>
             </li>
             <!-- Growing Business -->
-            <li class="projects-link">
+            <li class="projects__item item">
               <img
-                class="projects-image"
+                class="projects__image"
                 src="./images/portfolio/growing-business.jpg"
                 alt="Image of Growing Business from Application Category"
                 width="370"
                 height="294"
               />
-              <h6 class="projects-name">Growing Business</h6>
-              <p class="projects-category">Aplikacja</p>
+              <h6 class="projects__name">Growing Business</h6>
+              <p class="projects__category">Aplikacja</p>
             </li>
           </ul>
         </div>
+        <!-- end projects container -->
       </div>
       <!-- end portfolio container -->
     </main>
     <!-- end main -->
     <!-- start footer -->
-    <footer class="footer-container">
-      <img
-        src="images/background.jpg"
-        class="bg-image"
-        alt="gray background of footer"
-        width="1600"
-        height="252"
-      />
-      <a href="./index.html" class="logo"
-        ><span class="logo-web">Web</span>Studio</a
-      >
-
+    <footer class="footer__container">
+      <!-- logo -->
+      <div class="logo__container">
+        <a href="./index.html" class="logo__link link"
+          ><span class="logo__web">Web</span>Studio</a
+        >
+      </div>
       <!-- address to coresponde -->
-      <address>
-        <ul class="contact-list">
-          <li class="contact-link">m. Warszawa, Aleje Jerozolimskie 21</li>
-          <li class="contact-link">
-            <a href="mailto:info@example.com">info@example.com</a>
+      <address class="contact__footer">
+        <ul class="contact__list">
+          <li class="contact__item item">
+            m. Warszawa, Aleje Jerozolimskie 21
           </li>
-          <li class="contact-link">
-            <a href="tel:+48111111111">+48 111 111 111</a>
+          <li class="contact__item item">
+            <a class="contact__link link" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </li>
+          <li class="contact__item item">
+            <a class="contact__link link" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
           </li>
         </ul>
       </address>
