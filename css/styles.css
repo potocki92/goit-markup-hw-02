@@ -7,17 +7,30 @@ body {
   font-size: 14px;
 }
 
+/********************
+* FOR ALL LIST ITEM *
+********************/
 .item {
   list-style: none;
 }
 
+/***************
+* FOR ALL LINK *
+***************/
 .link {
   text-decoration: none;
 }
 
+/***********
+*   TEXT   *
+***********/
+
 /* logo link */
 .logo__link {
   font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-style: normal;
   color: #000000;
 }
 
@@ -27,11 +40,17 @@ body {
 /* header container */
 .header__container {
   background: #ffffff;
+  border: 1px solid #ececec;
   height: 80px;
+  width: 100%;
+  display: flex;
 }
-/* navigation link text */
-.nav__link {
+/* navigation link and contact link text */
+.nav__link,
+.contact__link {
   color: #212121;
+  font-weight: 500;
+  line-height: 1.14;
 }
 
 .nav__link:hover,
@@ -39,7 +58,7 @@ body {
   color: #2196f3;
 }
 
-/* contact link text  */
+/* contact link color text  */
 .contact__link {
   color: #757575;
 }
@@ -67,56 +86,102 @@ body {
 .footer__container .contact__link {
   color: rgba(255, 255, 255, 0.6);
 }
-/* MAIN TAGS */
+/* INDEX TAGS */
 
 /* title container */
 .title__container {
   background: #2f303a;
+  text-align: center;
 }
 /* title heading */
 .title__page {
   color: #ffffff;
   font-size: 44px;
+  font-weight: 900;
+  line-height: 1.4;
 }
 /* title button */
 .title__button {
   background: #2196f3;
+  border-style: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   color: #ffffff;
+  font-weight: 700;
+  line-height: 1.9;
+  cursor: pointer;
 }
 /* feature heading text */
 .feature__text {
   text-transform: uppercase;
+  line-height: 1.14;
 }
 /* feature paragraph text */
 .feature__description {
   color: #757575;
+  line-height: 1.7;
+}
+/* team cards */
+.team__card {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
+}
+
+.team__image {
+  border-radius: 0px;
 }
 /* about heading text */
-.about__text {
+.about__text,
+.team__text {
   font-size: 36px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+/* team container */
+.team__container {
+  width: 100%;
+  font-size: 16px;
+  background: #f5f4fa;
+  text-align: center;
+}
+
+.team__box {
+  display: inline-flex;
 }
 /* team heading text */
 .team__name {
   font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7;
+  text-align: center;
 }
 /* team paragraph text */
 .team__profession {
   font-size: 16px;
+  line-height: 1.7;
   color: #757575;
+  text-align: center;
 }
 /* PORTFOLIO TAGS */
 /* category buttons */
 .filters__button {
   background: #f5f4fa;
   border-radius: 4px;
+  border-style: none;
   color: #212121;
   font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  cursor: pointer;
 }
 
 .filters__button:hover,
 .filters__button:focus {
   color: #ffffff;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1) 0px 1px 2px rgba(0, 0, 0, 0.08),
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   background: #2196f3;
 }
@@ -124,9 +189,12 @@ body {
 /* projects heading */
 .projects__name {
   font-size: 18px;
+  line-height: 2;
+  font-style: normal;
 }
 /* projects paragraph */
 .projects__category {
   color: #757575;
   font-size: 16px;
+  line-height: 1.9;
 }
