@@ -21,23 +21,41 @@ body {
   text-decoration: none;
 }
 
-/***********
-*   TEXT   *
-***********/
+/* 
+
+=====================================
+
+        GENERAL TEXT STYLE
+      FOR INDEX AND PORTFOLIO
+
+=====================================
+
+*/
+
+/* 
+
+*************************************
+
+          HEADER SECTION
+
+*************************************
+
+*/
 
 /* logo link */
 .logo__link {
+  font-family: 'Raleway';
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
   font-style: normal;
   color: #000000;
 }
-
+/* span color */
 .logo__link .logo__web {
   color: #2196f3;
 }
-/* header container */
+/* Header container */
 .header__container {
   background: #ffffff;
   border: 1px solid #ececec;
@@ -52,9 +70,12 @@ body {
   font-weight: 500;
   line-height: 1.14;
 }
-
+/* navigation link nad contact link color 
+  when user hover or focused then color has will change */
 .nav__link:hover,
-.nav__link:focus {
+.nav__link:focus,
+.contact__link:hover,
+.contact__link:focus {
   color: #2196f3;
 }
 
@@ -62,45 +83,85 @@ body {
 .contact__link {
   color: #757575;
 }
+/* 
 
-.contact__link:hover,
-.contact__link:focus {
-  color: #2196f3;
-}
+*************************************
 
+          FOOTER SECTION
+
+*************************************
+
+*/
 /* footer container */
 .footer__container {
   background: #2f303a;
   height: 252px;
 }
-
-/* footer logo */
+/* 
+  footer logo 
+  white color of the logo 
+  is only in footer of the container
+*/
 .footer__container .logo__link {
   color: #ffffff;
 }
-/* footer contact item list */
+/* 
+  footer contact item list 
+  white color of the contact name 
+  is only for first contact__item in footer container
+*/
 .footer__container .contact__item {
   color: #ffffff;
 }
-/* footer contact text */
+/* 
+  footer contact text 
+  white color with alpha is for contact__links in footer container
+*/
 .footer__container .contact__link {
   color: rgba(255, 255, 255, 0.6);
 }
-/* INDEX TAGS */
 
-/* title container */
+/* 
+
+=====================================
+
+            INDEX.HTML
+
+=====================================
+
+*/
+
+/* 
+
+*************************************
+
+          CONTAINER WITH 
+         TITLE AND BUTTON
+
+*************************************
+
+*/
+/* 
+  container containing 
+  main title and button
+ */
 .title__container {
   background: #2f303a;
   text-align: center;
 }
-/* title heading */
+/*
+  main title 
+*/
 .title__page {
   color: #ffffff;
+  text-transform: uppercase;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.4;
 }
-/* title button */
+/* 
+  button 
+*/
 .title__button {
   background: #2196f3;
   border-style: none;
@@ -111,17 +172,82 @@ body {
   line-height: 1.9;
   cursor: pointer;
 }
-/* feature heading text */
+
+/* 
+
+*************************************
+
+        CONTAINER WITH FEATURES
+       (FOR NOW HAS LOREM IPSUM)
+
+*************************************
+
+*/
+/* 
+  feature heading text (lorem ipsum)
+*/
 .feature__text {
   text-transform: uppercase;
   line-height: 1.14;
 }
-/* feature paragraph text */
+/* 
+  feature paragraph text (lorem ipsum...)
+*/
 .feature__description {
   color: #757575;
   line-height: 1.7;
 }
-/* team cards */
+
+/* 
+
+*************************************
+
+     CONTAINER WITH ABOUT SECTION
+          (EMPTY FOR NOW)
+
+*************************************
+
+*/
+/* 
+  about and team heading text
+  have the same font styles  
+*/
+.about__text,
+.team__text {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+/* 
+
+*************************************
+
+        CONTAINER WITH TEAM
+
+*************************************
+
+*/
+/* 
+  main team container
+  it has all the tags with the team and heading
+*/
+.team__container {
+  width: 100%;
+  font-size: 16px;
+  background: #f5f4fa;
+  text-align: center;
+}
+/* 
+  one div with all team card
+*/
+.team__box {
+  display: inline-flex;
+}
+/*
+  team card with image, 
+  team name and team profession 
+*/
 .team__card {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -129,44 +255,44 @@ body {
   border-radius: 0px 0px 4px 4px;
   width: 270px;
 }
-
+/* 
+  tag with the image of one person from the team
+  width and height are styled in html 
+*/
 .team__image {
   border-radius: 0px;
 }
-/* about heading text */
-.about__text,
-.team__text {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.7;
-}
-/* team container */
-.team__container {
-  width: 100%;
-  font-size: 16px;
-  background: #f5f4fa;
-  text-align: center;
-}
-
-.team__box {
-  display: inline-flex;
-}
-/* team heading text */
+/* 
+  team heading text 
+*/
 .team__name {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.7;
   text-align: center;
 }
-/* team paragraph text */
+/* 
+  team paragraph text 
+*/
 .team__profession {
   font-size: 16px;
   line-height: 1.7;
   color: #757575;
   text-align: center;
 }
-/* PORTFOLIO TAGS */
-/* category buttons */
+
+/* 
+
+=====================================
+
+           PARAGRAPH.HTML
+
+=====================================
+
+*/
+/* 
+  buttons with category
+*/
 .filters__button {
   background: #f5f4fa;
   border-radius: 4px;
@@ -177,7 +303,10 @@ body {
   line-height: 1.6;
   cursor: pointer;
 }
-
+/* 
+  change color and add shadow to buttons
+  when user hover or focus them
+*/
 .filters__button:hover,
 .filters__button:focus {
   color: #ffffff;
@@ -185,14 +314,17 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   background: #2196f3;
 }
-
-/* projects heading */
+/* 
+  projects heading 
+*/
 .projects__name {
   font-size: 18px;
   line-height: 2;
   font-style: normal;
 }
-/* projects paragraph */
+/* 
+  projects paragraph 
+*/
 .projects__category {
   color: #757575;
   font-size: 16px;
