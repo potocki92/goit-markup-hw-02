@@ -83,6 +83,10 @@ body {
   width: 100%;
   display: flex;
 }
+.contact__list {
+  font-style: none;
+
+}
 /* navigation link and contact link text */
 .nav__link,
 .contact__link {
@@ -187,7 +191,7 @@ body {
   border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: var(--radius);
-  color: var(--text-color);
+  color: var(--first-color);
   font-weight: var(--second-weight);
   line-height: var(--second-line-height);
   cursor: pointer;
