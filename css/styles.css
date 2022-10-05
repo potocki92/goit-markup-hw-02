@@ -94,6 +94,10 @@ body {
   font-weight: var(--first-weight);
   line-height: 1.14;
 }
+/* change the color of the link text when the user is on the page that corresponds to the link from the navigation */
+.active__link {
+  color: var(--second-color);
+}
 /* navigation link nad contact link color 
   when user hover or focused then color has will change */
 .nav__link:hover,
